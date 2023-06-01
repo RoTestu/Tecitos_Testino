@@ -26,23 +26,27 @@
 
 <body>
 
-
-    <!-- NAV BAR -->
-
+    <!-- HEADER + NAV BAR -->
     <header class="header">
 
         <div class="logoNav">
             <a href="../index.html">
                 <img src="../Images/LogoDos.png" alt="Logo Tecitos">
             </a>
+            <!-- menu cel -->
+            <div class="navCel">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
         <nav>
             <ul class="navLinks">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./infusiones.html">Infusiones</a></li>
-                <li><a href="./locales.html">Locales</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a class="activo" href="./sugerencias.html">Sugerencias</a></li>
+                <li class="navItem"><a class="navSecciones" href="../index.html">Home</a></li>
+                <li class="navItem"><a class="navSecciones" href="./infusiones.html">Infusiones</a></li>
+                <li class="navItem"><a class="navSecciones" href="./locales.html">Locales</a></li>
+                <li class="navItem"><a class="navSecciones" href="./nosotros.html">Nosotros</a></li>
+                <li class="navItem"><a class="navSecciones" id="activo" href="./sugerencias.html">Sugerencias</a></li>
                 <button class="carrito"><i class="fa-solid fa-basket-shopping fa-xl"
                         style="color: #555048;"></i></button>
             </ul>
@@ -52,7 +56,6 @@
 
 
     <!-- MAIN -->
-
     <main>
 
         <div class="mensaje">
@@ -61,31 +64,31 @@
                 tengas ¡Estamos para ayudarte!</p>
         </div>
 
-        <!-- FORMULARIO -->
+        <!-- formulario -->
 
         <div class="formulario">
             <form>
-                <p>
+                <p class="formNombre">
                     <label>Nombre</label>
                     <input type="text" name="fullname">
                 </p>
-                <p>
+                <p class="formMail">
                     <label>Mail</label>
                     <input type="email" name="email">
                 </p>
-                <p>
+                <p class="formTelefono">
                     <label>Telefono</label>
                     <input type="tel" name="phone">
                 </p>
-                <p>
+                <p class="formAsunto">
                     <label>Asunto</label>
                     <input type="text" name="affair">
                 </p>
-                <p class="extension">
+                <p class="formMensaje">
                     <label>Mensaje</label>
                     <textarea name="message" rows="3"></textarea>
                 </p>
-                <p class="extension">
+                <p class="formBoton">
                     <button>
                         ENVIAR
                     </button>
@@ -93,25 +96,24 @@
             </form>
         </div>
 
-
     </main>
 
 
-    <!-- footer -->
+    <!-- FOOTER -->
     <footer class="footer">
 
         <div class="gridFooter">
-            <div class="caja">
+            <div class="footerContacto">
                 <p><b>Contacto</b></p>
                 <li><i class="fa-solid fa-phone fa-sm"></i> 15-9856-5654</li>
                 <li><i class="fa-solid fa-at fa-sm"></i> Tecitos@gmail.com</li>
                 <li><i class="fa-solid fa-house fa-sm"></i> Av. Pedro Goyena 1055</li>
             </div>
-            <div class="caja">
-                <img src="../Images/Logo.png" alt="Logo" width="200px">
+            <div class="footerImg">
+                <img src="../Images/Logo.png" alt="Logo">
             </div>
-            <div class="caja">
-                <button><img src="../Images/Wpp.png" alt="Wpp" width="70px"></button>
+            <div class="footerWpp">
+                <button><img src="../Images/Wpp.png" alt="Wpp"></button>
             </div>
         </div>
         <div class="derechos">

@@ -27,7 +27,6 @@
 
 <body>
 
-
     <!-- HEADER + NAV BAR -->
 
     <header class="header">
@@ -36,14 +35,20 @@
             <a href="../index.html">
                 <img src="../Images/LogoDos.png" alt="Logo Tecitos">
             </a>
+            <!-- menu cel -->
+            <div class="navCel">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
         <nav>
             <ul class="navLinks">
-                <li><a href="../index.html">Home</a></li>
-                <li><a class="activo" href="./infusiones.html">Infusiones</a></li>
-                <li><a href="./locales.html">Locales</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./sugerencias.html">Sugerencias</a></li>
+                <li class="navItem"><a class="navSecciones" href="../index.html">Home</a></li>
+                <li class="navItem"><a class="navSecciones" id="activo" href="./infusiones.html">Infusiones</a></li>
+                <li class="navItem"><a class="navSecciones" href="./locales.html">Locales</a></li>
+                <li class="navItem"><a class="navSecciones" href="./nosotros.html">Nosotros</a></li>
+                <li class="navItem"><a class="navSecciones" href="./sugerencias.html">Sugerencias</a></li>
                 <button class="carrito"><i class="fa-solid fa-basket-shopping fa-xl"
                         style="color: #555048;"></i></button>
             </ul>
@@ -51,9 +56,7 @@
 
     </header>
 
-
     <!-- MAIN -->
-
     <main>
 
         <div class="mensaje">
@@ -71,141 +74,95 @@
         <div id="listaInfusiones">
             <h3 class="list">Listado de tés puros:</h3>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <div class="venta">
-                    <div>
-                        <img src="../Images/TeNegro.jpg" alt="">
-                    </div>
-                    <div class="datos">
-                        <h1 class="nombre">TÉ NEGRO</h1>
-                        <p class="info">Descubre la exquisita esencia del té negro: una infusión robusta y reconfortante
-                            con
-                            notas intensas de malta y cacao. Su aroma envolvente y su sabor equilibrado te transportarán
-                            a
-                            un
-                            mundo de placer sensorial. Disfruta de su color ámbar oscuro y benefíciate de sus
-                            propiedades
-                            antioxidantes y energizantes. ¡Una experiencia única en cada taza!</p>
-                        <h2 class="precio">$1800</h2>
-                        <div class="boton"><button>COMPRAR</button></div>
-                    </div>
+            <div class="venta">
+                <div>
+                    <img src="../Images/TeNegro.jpg" alt="">
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <div class="venta">
-                    <div>
-                        <img src="../Images/TeRojo.jpg" alt="">
-                    </div>
-                    <div class="datos">
-                        <h1 class="nombre">TÉ ROJO</h1>
-                        <p class="info">Sumérgete en el cautivador universo del té rojo: una infusión cautivadora con un
-                            carácter terroso y suave sabor a madera. Su color rojo intenso y su aroma terroso te
-                            envolverán
-                            en una experiencia única. Descubre sus propiedades depurativas y digestivas, y déjate
-                            seducir
-                            por su equilibrio perfecto entre sabor y beneficios para la salud. ¡El deleite en cada
-                            sorbo!
-                        </p>
-                        <h2 class="precio">$1800</h2>
-                        <div class="boton"><button>COMPRAR</button></div>
-                    </div>
+                <div class="datos">
+                    <h1 class="nombre">TÉ NEGRO</h1>
+                    <p class="info">Descubre la exquisita esencia del té negro: una infusión robusta y reconfortante
+                        con notas intensas de malta y cacao. Su aroma envolvente y su sabor equilibrado te transportarán
+                        a un mundo de placer sensorial. Disfruta de su color ámbar oscuro y benefíciate de sus
+                        propiedades antioxidantes y energizantes. ¡Una experiencia única en cada taza!</p>
+                    <h2 class="precio">$1800</h2>
+                    <div class="boton"><button>COMPRAR</button></div>
                 </div>
+            </div>
 
-                <div class="venta">
-                    <div>
-                        <img src="../Images/TeVerde.jpg" alt="">
-                    </div>
-                    <div class="datos">
-                        <h1 class="nombre">TÉ VERDE</h1>
-                        <p class="info">Embárcate en un viaje revitalizante con el té verde: una infusión fresca y
-                            vigorizante con notas herbales y un toque sutilmente dulce. Su color verde brillante y su
-                            aroma
-                            delicado te transportarán a un oasis de calma. Disfruta de sus propiedades antioxidantes y
-                            desintoxicantes, y déjate cautivar por su sabor refrescante y revitalizante. ¡Un verdadero
-                            elixir de bienestar en cada taza!</p>
-                        <h2 class="precio">$1800</h2>
-                        <div class="boton"><button>COMPRAR</button></div>
-                    </div>
+            <div class="venta">
+                <div>
+                    <img src="../Images/TeRojo.jpg" alt="">
                 </div>
+                <div class="datos">
+                    <h1 class="nombre">TÉ ROJO</h1>
+                    <p class="info">Sumérgete en el cautivador universo del té rojo: una infusión cautivadora con un
+                        carácter terroso y suave sabor a madera. Su color rojo intenso y su aroma terroso te
+                        envolverán
+                        en una experiencia única. Descubre sus propiedades depurativas y digestivas, y déjate
+                        seducir
+                        por su equilibrio perfecto entre sabor y beneficios para la salud. ¡El deleite en cada
+                        sorbo!
+                    </p>
+                    <h2 class="precio">$1800</h2>
+                    <div class="boton"><button>COMPRAR</button></div>
+                </div>
+            </div>
 
-                <div class="venta">
-                    <div>
-                        <img src="../Images/TeEarlGrey.jpg" alt="">
-                    </div>
-                    <div class="datos">
-                        <h1 class="nombre">EARL GREY</h1>
-                        <p class="info">Descubre la elegancia del té Earl Grey: una infusión sofisticada con el
-                            equilibrio
-                            perfecto entre el intenso aroma cítrico de la bergamota y el sabor suave y seductor del té
-                            negro. Su color ámbar dorado y su aroma cautivador te transportarán a un mundo de
-                            refinamiento.
-                            Disfruta de su carácter distintivo y déjate envolver por su irresistible encanto en cada
-                            sorbo.
-                            ¡Una experiencia de lujo para los amantes del té!</p>
-                        <h2 class="precio">$1800</h2>
-                        <div class="boton"><button>COMPRAR</button></div>
-                    </div>
+            <div class="venta">
+                <div>
+                    <img src="../Images/TeVerde.jpg" alt="">
                 </div>
+                <div class="datos">
+                    <h1 class="nombre">TÉ VERDE</h1>
+                    <p class="info">Embárcate en un viaje revitalizante con el té verde: una infusión fresca y
+                        vigorizante con notas herbales y un toque sutilmente dulce. Su color verde brillante y su
+                        aroma
+                        delicado te transportarán a un oasis de calma. Disfruta de sus propiedades antioxidantes y
+                        desintoxicantes, y déjate cautivar por su sabor refrescante y revitalizante. ¡Un verdadero
+                        elixir de bienestar en cada taza!</p>
+                    <h2 class="precio">$1800</h2>
+                    <div class="boton"><button>COMPRAR</button></div>
+                </div>
+            </div>
+
+            <div class="venta">
+                <div>
+                    <img src="../Images/TeEarlGrey.jpg" alt="">
+                </div>
+                <div class="datos">
+                    <h1 class="nombre">EARL GREY</h1>
+                    <p class="info">Descubre la elegancia del té Earl Grey: una infusión sofisticada con el
+                        equilibrio
+                        perfecto entre el intenso aroma cítrico de la bergamota y el sabor suave y seductor del té
+                        negro. Su color ámbar dorado y su aroma cautivador te transportarán a un mundo de
+                        refinamiento.
+                        Disfruta de su carácter distintivo y déjate envolver por su irresistible encanto en cada
+                        sorbo.
+                        ¡Una experiencia de lujo para los amantes del té!</p>
+                    <h2 class="precio">$1800</h2>
+                    <div class="boton"><button>COMPRAR</button></div>
+                </div>
+            </div>
         </div>
 
     </main>
 
 
-    <!-- footer -->
-
+    <!-- FOOTER -->
     <footer class="footer">
 
         <div class="gridFooter">
-            <div class="caja">
+            <div class="footerContacto">
                 <p><b>Contacto</b></p>
                 <li><i class="fa-solid fa-phone fa-sm"></i> 15-9856-5654</li>
                 <li><i class="fa-solid fa-at fa-sm"></i> Tecitos@gmail.com</li>
                 <li><i class="fa-solid fa-house fa-sm"></i> Av. Pedro Goyena 1055</li>
             </div>
-            <div class="caja">
-                <img src="../Images/Logo.png" alt="Logo" width="200px">
+            <div class="footerImg">
+                <img src="../Images/Logo.png" alt="Logo">
             </div>
-            <div class="caja">
-                <button><img src="../Images/Wpp.png" alt="Wpp" width="70px"></button>
+            <div class="footerWpp">
+                <button><img src="../Images/Wpp.png" alt="Wpp"></button>
             </div>
         </div>
         <div class="derechos">

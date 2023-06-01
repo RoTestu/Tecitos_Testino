@@ -27,23 +27,27 @@
 
 <body>
 
-
     <!-- HEADER + NAV BAR -->
-
     <header class="header">
 
         <div class="logoNav">
             <a href="./index.html">
                 <img src="./Images/LogoDos.png" alt="Logo Tecitos">
             </a>
+            <!-- menu cel -->
+            <div class="navCel">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
         <nav>
             <ul class="navLinks">
-                <li><a class="activo" href="./index.html">Home</a></li>
-                <li><a href="./Pages/infusiones.html">Infusiones</a></li>
-                <li><a href="./Pages/locales.html">Locales</a></li>
-                <li><a href="./Pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./Pages/sugerencias.html">Sugerencias</a></li>
+                <li class="navItem"><a class="navSecciones" id="activo" href="./index.html">Home</a></li>
+                <li class="navItem"><a class="navSecciones" href="./Pages/infusiones.html">Infusiones</a></li>
+                <li class="navItem"><a class="navSecciones" href="./Pages/locales.html">Locales</a></li>
+                <li class="navItem"><a class="navSecciones" href="./Pages/nosotros.html">Nosotros</a></li>
+                <li class="navItem"><a class="navSecciones" href="./Pages/sugerencias.html">Sugerencias</a></li>
                 <button class="carrito"><i class="fa-solid fa-basket-shopping fa-xl"
                         style="color: #555048;"></i></button>
             </ul>
@@ -51,12 +55,10 @@
 
     </header>
 
-
     <!-- MAIN -->
-
     <main>
 
-        <!-- CARRUSEL -->
+        <!-- carrucel -->
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -109,21 +111,20 @@
 
 
     <!-- footer -->
-
     <footer class="footer">
 
         <div class="gridFooter">
-            <div class="caja">
+            <div class="footerContacto">
                 <p><b>Contacto</b></p>
                 <li><i class="fa-solid fa-phone fa-sm"></i> 15-9856-5654</li>
                 <li><i class="fa-solid fa-at fa-sm"></i> Tecitos@gmail.com</li>
                 <li><i class="fa-solid fa-house fa-sm"></i> Av. Pedro Goyena 1055</li>
             </div>
-            <div class="caja">
-                <img src="../Images/Logo.png" alt="Logo" width="200px">
+            <div class="footerImg">
+                <img src="../Images/Logo.png" alt="Logo">
             </div>
-            <div class="caja">
-                <button><img src="../Images/Wpp.png" alt="Wpp" width="70px"></button>
+            <div class="footerWpp">
+                <button><img src="../Images/Wpp.png" alt="Wpp"></button>
             </div>
         </div>
         <div class="derechos">
@@ -131,6 +132,7 @@
         </div>
 
     </footer>
+
 
     <!-- SCRIPT PROPIO -->
     <script src="./Scripts/codigo.js"></script>

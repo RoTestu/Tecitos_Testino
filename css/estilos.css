@@ -11,7 +11,6 @@ body {
     background-color: #F9EEDE !important;
 }
 
-
 /* HEADER - NAV BAR */
 
 .header {
@@ -84,7 +83,7 @@ body {
     background-color: #675D50;
 } */
 
-nav ul li a.activo {
+nav ul li a#activo {
     width: 100%;
     border-bottom: 3px solid #675D50;
 }
@@ -102,10 +101,8 @@ nav ul .carrito:hover {
     transform: scale(1.2);
 }
 
-
 /* MAIN */
-
-/* HOME */
+/* MAIN - HOME */
 
 main {
     background-color: #F9EEDE;
@@ -120,6 +117,9 @@ main {
     overflow: hidden;
 } */
 
+#carouselExampleAutoplaying{
+    z-index: 0;
+}
 
 .mensaje {
     padding: 50px 10% 20px 10%;
@@ -140,7 +140,7 @@ main div .titulo {
     column-gap: 100px;
 }
 
-/* INFUCIONES */
+/* MAIN - INFUCIONES */
 
 .botonesInfusiones {
     margin: 0 15%;
@@ -209,6 +209,7 @@ main div .list {
 .precio {
     grid-area: precio;
     text-align: center;
+    font-weight: bold;
     margin: 20px 0 0 0;
 }
 
@@ -233,9 +234,7 @@ main div .boton button:hover {
     border: solid 1px #22201d;
 }
 
-
-
-/* LOCALES */
+/*  MAIN - LOCALES */
 
 .ubicacion {
     display: grid;
@@ -275,8 +274,7 @@ main div .localesUbi i {
     width:100%;
 } */
 
-
-/* NOSOTROS */
+/*  MAIN - NOSOTROS */
 
 main div div.nosotros {
     display: flex;
@@ -307,8 +305,7 @@ main div div div.persona {
     font-size: 15px;
 }
 
-
-/* SUGERENCIAS */
+/*  MAIN - SUGERENCIAS */
 
 .formulario form {
     display: grid;
@@ -323,7 +320,8 @@ main div div div.persona {
     padding: 1em;
 }
 
-.formulario form .extension {
+.formulario form .formMensaje,
+.formulario form .formBoton {
     grid-column: 1 / 3;
 }
 
@@ -342,7 +340,7 @@ main div div div.persona {
     border-bottom: 1px solid #423e37;
 }
 
-main div .extension button {
+main div .formBoton button {
     border-radius: 12px;
     width: 20%;
     height: 50px;
@@ -352,11 +350,10 @@ main div .extension button {
     transition-duration: 0.4s;
 }
 
-main div .extension button:hover {
+main div .formBoton button:hover {
     background-color: #A9907E;
     border: solid 1px #423e37;
 }
-
 
 /* FOOTER */
 
@@ -386,10 +383,18 @@ footer div li {
     padding: 2px;
 }
 
+footer div img {
+    width: 200px;
+}
+
 footer div button {
     border: none;
     background-color: transparent;
     transition: all 0.3s;
+}
+
+footer div button img {
+    width: 70px;
 }
 
 footer div button:hover {
@@ -402,7 +407,6 @@ footer div button:hover {
     padding: 5px;
     text-align: center;
 }
-
 
 
 /* PANTALLA MEDIANA */
@@ -441,7 +445,7 @@ footer div button:hover {
         column-gap: 50px;
     }
 
-    /* MAIN INFUSIONES */
+    /* MAIN - INFUSIONES */
 
     main .botonesInfusiones button {
         width: 120px;
@@ -458,7 +462,7 @@ footer div button:hover {
         margin: 0;
     }
 
-    /* MAIN LOCALES */
+    /* MAIN - LOCALES */
 
     .ubicacion {
         margin: 40px 10%;
@@ -472,8 +476,7 @@ footer div button:hover {
         font-size: 0.9rem;
     }
 
-    /* MAIN NOSOTROS */
-
+    /* MAIN - NOSOTROS */
 
     main div div.nosotros {
         display: flex;
@@ -500,12 +503,12 @@ footer div button:hover {
         width: 100%;
         height: auto;
         display: inline-block;
-        
     }
 
     header .logoNav {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
     }
 
     header nav ul {
@@ -514,6 +517,77 @@ footer div button:hover {
         justify-content: space-between;
         padding: 20px 0 0 0;
     }
+
+
+/* NAVBAR CELULAR */
+.navCel{
+    display: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #675D50;
+}
+
+    .navCel{
+        display: block;
+    }
+
+    .navCel.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .navCel.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .navCel.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navLinks{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #22201d;
+        opacity: 95%;
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 100;
+    }
+
+    .navItem{
+        margin-block-end: 16px 0;
+    }
+
+.navLinks.active{
+    left: 0;
+    padding: 20px 0;
+}
+
+.header .navLinks li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a#activo {
+    border-bottom: 0;
+}
+
+.header .navLinks a:after {
+    height: 0;
+}
 
     /* MAIN - HOME */
 
@@ -524,43 +598,73 @@ footer div button:hover {
     .columnas {
         font-size: 0.85rem;
         text-align: justify;
-        column-count: 2;
-        column-gap: 50px;
+        column-count: 1;
     }
 
-    /* MAIN INFUSIONES */
+    /* MAIN - INFUSIONES */
+
+    main .botonesInfusiones {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 10%;
+    }
 
     main .botonesInfusiones button {
-        width: 120px;
-        height: 50px;
+        width: 110px;
+        height: 40px;
+        margin: 5px;
     }
 
     .venta {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 30px 10%;
     }
 
     .venta div img {
+        width: 100%;
         margin: 0;
     }
 
-    /* MAIN LOCALES */
+    .datos {
+        display: grid;
+        grid-template-areas: "nombre"
+            "info"
+            "precio"
+            "boton";
+    }
+
+
+    main div .datos p {
+        text-align: left;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .precio {
+        margin: 0;
+    }
+
+    .boton {
+        margin-top: 20px;
+    }
+
+    /* MAIN - LOCALES */
 
     .ubicacion {
+        display: flex;
+        flex-direction: column;
         margin: 40px 10%;
     }
 
-    main .ubicacion img {
-        width: 40px;
+    main .ubicacion .localesUbi{
+        margin: 15px 0 15px 0;
+        text-align: center;
     }
 
-    main div .localesUbi li {
-        font-size: 0.9rem;
-    }
-
-    /* MAIN NOSOTROS */
-
+    /* MAIN - NOSOTROS */
 
     main div div.nosotros {
         display: flex;
@@ -577,5 +681,66 @@ footer div button:hover {
         margin: 1rem;
     }
 
+/* MAIN - FORMULARIO */
 
+.formulario form {
+    display: grid;
+    grid-template-rows: auto;
+    margin: 0 10% 30px 10%;
+}
+
+
+main .formulario .formNombre{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+main .formulario .formMail{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+main .formulario .formTelefono{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+main .formulario .formAsunto{
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+
+main .formulario .formMensaje{
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
+
+main .formulario .formBoton{
+    grid-column: 1/3;
+    grid-row: 6/7;
+}
+
+main div .formBoton button {
+    width: 100%;
+}
+
+    /* FOOTER */
+
+    .footerContacto {
+        grid-column: 1/3;
+    }
+
+    .footerImg {
+        grid-column: 3/4;
+    }
+
+    .footerWpp {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin-top: 10px;
+    }
+
+    .footerImg img {
+        width: 100px;
+    }
 }

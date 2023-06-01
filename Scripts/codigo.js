@@ -1,3 +1,20 @@
+//NAVBAR CELULAR
+
+const navbarCelular = document.querySelector(".navCel")
+const navLinks = document.querySelector(".navLinks")
+
+
+navbarCelular.addEventListener("click", () =>{
+    navbarCelular.classList.toggle("active");
+    navLinks.classList.toggle("active");
+})
+
+document.querySelectorAll("navSecciones").forEach(n => n.addEventListener("click", () =>{
+    navbarCelular.classList.remove("active");
+    navLinks.classList.remove("active");
+}))
+
+
 //INFUSIONES BOTONES
 
 const listaInfusiones = document.getElementById('listaInfusiones')
