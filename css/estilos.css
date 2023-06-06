@@ -445,6 +445,10 @@ footer div button:hover {
         column-gap: 50px;
     }
 
+    main .mensaje .videoTe{
+        height: 450px;
+    }
+
     /* MAIN - INFUSIONES */
 
     main .botonesInfusiones button {
@@ -599,6 +603,10 @@ nav ul li a#activo {
         font-size: 0.85rem;
         text-align: justify;
         column-count: 1;
+    }
+
+    main .mensaje .videoTe{
+        height: 300px;
     }
 
     /* MAIN - INFUSIONES */
