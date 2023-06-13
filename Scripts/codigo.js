@@ -21,5 +21,5 @@ botonFormulario.addEventListener('click', () => {
     let nombre = nombreFormulario.value
     const mensajeFormulario = document.getElementById('formulario')
 
-    mensajeFormulario.innerHTML = `<h5>Gracias por tu mensaje, ${nombre}. Nos comunicaremos a la brevedad.</h5>`
+    mensajeFormulario.innerHTML = `<h5 class="formularioAgrad"><i class="fa-solid fa-envelope-open-text fa-bounce fa-lg" style="color: #555048;"></i> Gracias por tu mensaje, ${nombre}. Nos comunicaremos a la brevedad!</h5>`
 })

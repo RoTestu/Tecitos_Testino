@@ -16,7 +16,7 @@ body {
 .header {
     background-color: #F3DEBA;
     display: flex;
-    /* justify-content: space-between; */
+
     align-items: flex-end;
     align-items: center;
     height: 85px;
@@ -31,9 +31,7 @@ body {
 .header .logoNav img {
     height: 65px;
     width: auto;
-    /* padding: 10px; */
     transition: all 0.3s;
-    /* cursor: pointer; */
 }
 
 .header .logoNav img:hover {
@@ -76,13 +74,6 @@ body {
     transform-origin: bottom center;
 }
 
-/* nav ul li a.activo {
-    width: 100%;
-    transform: scaleX(1);
-    height: 3px;
-    background-color: #675D50;
-} */
-
 nav ul li a#activo {
     width: 100%;
     border-bottom: 3px solid #675D50;
@@ -108,16 +99,7 @@ main {
     background-color: #F9EEDE;
 }
 
-/* .carousel-control-next{
-    background-color: red;
-} */
-
-/* #carouselExampleIndicators{
-    margin-top: 20px;
-    overflow: hidden;
-} */
-
-#carouselExampleAutoplaying{
+#carouselExampleAutoplaying {
     z-index: 0;
 }
 
@@ -137,7 +119,11 @@ main div .titulo {
     text-indent: 20px;
     text-align: justify;
     column-count: 2;
-    column-gap: 100px;
+    column-gap: 70px;
+}
+
+main div .columnas p{
+    margin-bottom: 7px ;
 }
 
 /* MAIN - INFUCIONES */
@@ -238,14 +224,9 @@ main div .boton button:hover {
 
 .ubicacion {
     display: grid;
-    /* justify-items: center; */
     align-items: center;
-    /* overflow: hidden; */
-    /* border: solid 1px #423e37; */
-    /* grid-template-columns: 100px 350px 800px; */
     grid-template-columns: 8% 30% 62%;
     grid-template-rows: 200px;
-    /* padding: 20px; */
     margin: 40px 15%;
 }
 
@@ -267,13 +248,6 @@ main div .localesUbi i {
     padding-right: 5px;
 }
 
-/* .mapa{
-    overflow:hidden;
-    position:relative;
-    height:100%;
-    width:100%;
-} */
-
 /*  MAIN - NOSOTROS */
 
 main div div.nosotros {
@@ -291,9 +265,12 @@ main div div div.persona {
 }
 
 .persona img {
-    /* margin: 0rem 1.5em 15px; */
     width: 100%;
-    /* margin-left: 30%; */
+    transition: all 0.3s;
+}
+
+.persona img:hover {
+    transform: scale(1.1);
 }
 
 .persona .nombreNosotros {
@@ -315,7 +292,7 @@ main div div div.persona {
     border-radius: 20px;
 }
 
-.formulario form p {
+.formulario form fieldset {
     margin: 0;
     padding: 1em;
 }
@@ -355,6 +332,11 @@ main div .formBoton button:hover {
     border: solid 1px #423e37;
 }
 
+.formularioAgrad {
+    padding: 50px 10% 50px 10%;
+    margin: 0;
+}
+
 /* FOOTER */
 
 .footer {
@@ -385,6 +367,11 @@ footer div li {
 
 footer div img {
     width: 200px;
+    transition: all 0.3s;
+}
+
+footer div img:hover {
+    transform: scale(1.1);
 }
 
 footer div button {
@@ -445,7 +432,7 @@ footer div button:hover {
         column-gap: 50px;
     }
 
-    main .mensaje .videoTe{
+    main .mensaje .videoTe {
         height: 450px;
     }
 
@@ -523,40 +510,40 @@ footer div button:hover {
     }
 
 
-/* NAVBAR CELULAR */
-.navCel{
-    display: none;
-    cursor: pointer;
-    margin-top: 15px;
-}
+    /* NAVBAR CELULAR */
+    .navCel {
+        display: none;
+        cursor: pointer;
+        margin-top: 15px;
+    }
 
-.bar{
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #675D50;
-}
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #675D50;
+    }
 
-    .navCel{
+    .navCel {
         display: block;
     }
 
-    .navCel.active .bar:nth-child(2){
+    .navCel.active .bar:nth-child(2) {
         opacity: 0;
     }
 
-    .navCel.active .bar:nth-child(1){
+    .navCel.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
 
-    .navCel.active .bar:nth-child(3){
+    .navCel.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .navLinks{
+    .navLinks {
         position: fixed;
         left: -100%;
         top: 70px;
@@ -571,27 +558,27 @@ footer div button:hover {
         z-index: 100;
     }
 
-    .navItem{
+    .navItem {
         margin-block-end: 16px 0;
     }
 
-.navLinks.active{
-    left: 0;
-    padding: 20px 0;
-}
+    .navLinks.active {
+        left: 0;
+        padding: 20px 0;
+    }
 
-.header .navLinks li {
-    display: inline-block;
-    padding: 10px;
-}
+    .header .navLinks li {
+        display: inline-block;
+        padding: 10px;
+    }
 
-nav ul li a#activo {
-    border-bottom: 0;
-}
+    nav ul li a#activo {
+        border-bottom: 0;
+    }
 
-.header .navLinks a:after {
-    height: 0;
-}
+    .header .navLinks a:after {
+        height: 0;
+    }
 
     /* MAIN - HOME */
 
@@ -605,7 +592,7 @@ nav ul li a#activo {
         column-count: 1;
     }
 
-    main .mensaje .videoTe{
+    main .mensaje .videoTe {
         height: 300px;
     }
 
@@ -667,7 +654,7 @@ nav ul li a#activo {
         margin: 40px 10%;
     }
 
-    main .ubicacion .localesUbi{
+    main .ubicacion .localesUbi {
         margin: 15px 0 15px 0;
         text-align: center;
     }
@@ -689,48 +676,48 @@ nav ul li a#activo {
         margin: 1rem;
     }
 
-/* MAIN - FORMULARIO */
+    /* MAIN - FORMULARIO */
 
-.formulario form {
-    display: grid;
-    grid-template-rows: auto;
-    margin: 0 10% 30px 10%;
-}
+    .formulario form {
+        display: grid;
+        grid-template-rows: auto;
+        margin: 0 10% 30px 10%;
+    }
 
 
-main .formulario .formNombre{
-    grid-column: 1/3;
-    grid-row: 1/2;
-}
+    main .formulario .formNombre {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
 
-main .formulario .formMail{
-    grid-column: 1/3;
-    grid-row: 2/3;
-}
+    main .formulario .formMail {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
 
-main .formulario .formTelefono{
-    grid-column: 1/3;
-    grid-row: 3/4;
-}
+    main .formulario .formTelefono {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
 
-main .formulario .formAsunto{
-    grid-column: 1/3;
-    grid-row: 4/5;
-}
+    main .formulario .formAsunto {
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
 
-main .formulario .formMensaje{
-    grid-column: 1/3;
-    grid-row: 5/6;
-}
+    main .formulario .formMensaje {
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
 
-main .formulario .formBoton{
-    grid-column: 1/3;
-    grid-row: 6/7;
-}
+    main .formulario .formBoton {
+        grid-column: 1/3;
+        grid-row: 6/7;
+    }
 
-main div .formBoton button {
-    width: 100%;
-}
+    main div .formBoton button {
+        width: 100%;
+    }
 
     /* FOOTER */
 

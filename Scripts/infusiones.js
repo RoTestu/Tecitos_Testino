@@ -1,5 +1,4 @@
 //INFUSIONES BOTONES
-
 const listaInfusiones = document.getElementById('listaInfusiones')
 const botonTesPuros = document.getElementById('botonTesPuros')
 const botonTesHierbas = document.getElementById('botonHierbas')
@@ -12,16 +11,13 @@ botonTesPuros.addEventListener('click', () => {
     <h3 class="list">Listado de tés puros:</h3>
     <div class="venta">
     <div>
-    <img src="../Images/TeNegro.jpg" alt="">
+        <img src="../Images/TeNegro.jpg" alt="">
     </div>
     <div class="datos">
-    <h1 class="nombre">TÉ NEGRO</h1>
-    <p class="info">Descubre la exquisita esencia del té negro: una infusión robusta y reconfortante con
-    notas intensas de malta y cacao. Su aroma envolvente y su sabor equilibrado te transportarán a un
-    mundo de placer sensorial. Disfruta de su color ámbar oscuro y benefíciate de sus propiedades
-    antioxidantes y energizantes. ¡Una experiencia única en cada taza!</p>
-    <h2 class="precio">$1800</h2>
-    <div class="boton"><button>COMPRAR</button></div>
+        <h1 class="nombre">TÉ NEGRO</h1>
+        <p class="info">Descubre la exquisita esencia del té negro: una infusión robusta y reconfortante con notas intensas de malta y cacao. Su aroma envolvente y su sabor equilibrado te transportarán a un mundo de placer sensorial. Disfruta de su color ámbar oscuro y benefíciate de sus propiedades antioxidantes y energizantes. ¡Una experiencia única en cada taza!</p>
+        <h2 class="precio">$1800</h2>
+        <div class="boton"><button>COMPRAR</button></div>
     </div>
     </div>
     
