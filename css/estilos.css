@@ -590,6 +590,7 @@ footer div button:hover {
         font-size: 0.85rem;
         text-align: justify;
         column-count: 1;
+        line-height: 150%;
     }
 
     main .mensaje .videoTe {
